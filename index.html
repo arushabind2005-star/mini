@@ -32,7 +32,32 @@
         </div>
         <input type="text" id="searchInput" placeholder="Search..." />
       </section>
-      
+      <div class="products-filters">
+        <section id="filters-tab">
+          <h2 class="filter-head">Filters</h2>
+          <br />
+          <h3 class="filter-head">Gender</h3>
+          <br />
+          <label>
+            <input type="radio" name="gender" value="male" /> Male
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="gender" value="female" /> Female
+          </label>
+          <br />
+          <h3 class="filter-head">Rating ⭐</h3>
+          <br />
+          <input
+            id="rating-input"
+            type="range"
+            min="0"
+            max="5"
+            step="0.5"
+            value="0"
+          />
+
+      </div>
     </main>
   </body>
 </html>
