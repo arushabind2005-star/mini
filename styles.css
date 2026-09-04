@@ -66,3 +66,19 @@
   font-weight: bold;
   margin-left: 6px;
 }
+
+main {
+  margin: 3rem;
+}
+.card-cart-button-strip,
+.card-rating-discount-strip {
+  display: flex;
+  justify-content: space-between;
+}
+.product-button {
+  text-decoration: none;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: var(--nav-pill-color);
+}
