@@ -104,3 +104,21 @@ main {
   display: flex;
   
 }
+
+#filters-tab{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
+.filter-head{
+  color:var(--primary--color)
+}
+#rating-input{
+  width: 150px;
+}
+#clear-btn{
+  width: 100px;
+}
+ #searchInput{
+   padding: 5px;
+ }
