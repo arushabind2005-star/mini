@@ -21,3 +21,15 @@ const displayProducts = (products) => {
     productDiplay.append(card);
   });
 };
+
+displayProducts(products);
+
+genderSelection.addEventListener('change', (e) => {
+  const filter = e.target.value;
+  const filteredProducts = products.filter((curr) => curr.gender === filter);
+  console.log(filteredProducts);
+  displayProducts(filteredProducts);
+  if (filter === '') {
+    displayProducts(products);
+  }
+});
