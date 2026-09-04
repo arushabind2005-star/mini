@@ -94,3 +94,13 @@ main {
   margin-bottom: 2rem;
   color: var(--primary--color);
 }
+
+#gender-selection {
+  border: 1px solid var(--primary--color);
+  font-size: large;
+  padding: 4px;
+}
+.products-filters{
+  display: flex;
+  
+}
