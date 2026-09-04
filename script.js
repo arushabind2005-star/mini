@@ -64,3 +64,22 @@ searchInput.addEventListener('change', (e) => {
   console.log(filteredProducts);
   displayProducts(filteredProducts);
 });
+
+categoryCheckboxes.forEach((checkbox) => {
+  checkbox.addEventListener('change', () => {
+    const selectCategories = [];
+    categoryCheckboxes.forEach((cb) => {
+      if (cb.checked) {
+        selectCategories.push(cb.value);
+      }
+    });
+    if (selectCategories.length === 0) {
+      displayProducts(products);
+      return;
+    }
+    const filteredProducts = products.filter((p) =>
+      selectCategories.includes(p.category)
+    );
+    displayProducts(filteredProducts);
+  });
+});
