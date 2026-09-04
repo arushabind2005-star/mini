@@ -87,3 +87,10 @@ main {
   opacity: 0.8;
   cursor: pointer;
 }
+
+#filters {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  color: var(--primary--color);
+}
