@@ -49,3 +49,18 @@ ratingInput.addEventListener('change', (e) => {
   const filteredProducts = products.filter((curr) => curr.rating >= rating);
   displayProducts(filteredProducts);
 });
+searchInput.addEventListener('change', (e) => {
+  const searchText = e.target.value.toLowerCase();
+
+  if (searchText === '') {
+    displayProducts(products);
+  }
+  const filteredProducts = products.filter((product) => {
+    return (
+      product.name.toLowerCase().includes(searchText) ||
+      product.description.toLowerCase().includes(searchText)
+    );
+  });
+  console.log(filteredProducts);
+  displayProducts(filteredProducts);
+});
