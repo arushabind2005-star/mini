@@ -23,3 +23,7 @@
   justify-content: end;
   gap: 15px;
 }
+
+.nav-pill:hover {
+  opacity: 0.5;
+}
