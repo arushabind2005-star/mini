@@ -60,3 +60,9 @@
   color: gray;
   margin-left: 6px;
 }
+
+.discount {
+  color: green;
+  font-weight: bold;
+  margin-left: 6px;
+}
