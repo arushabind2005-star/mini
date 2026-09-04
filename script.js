@@ -83,3 +83,13 @@ categoryCheckboxes.forEach((checkbox) => {
     displayProducts(filteredProducts);
   });
 });
+
+clearbtn.addEventListener('click', () => {
+  genderSelection.value = '';
+  genderRadios.forEach((radio) => (radio.checked = false));
+  categoryCheckboxes.forEach((cb) => (cb.checked = false));
+  ratingInput.value = 0;
+  ratingValue.textContent = 0;
+  searchInput.value = '';
+  displayProducts(products);
+});
