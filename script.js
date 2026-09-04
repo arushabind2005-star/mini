@@ -1,6 +1,13 @@
 import products from './data.js';
 
-
+const productDiplay = document.getElementById('productsDisplay');
+const genderSelection = document.getElementById('gender-selection');
+const genderRadios = document.querySelectorAll('input[name]');
+const ratingInput = document.getElementById('rating-input');
+const ratingValue = document.getElementById('rating-value');
+const searchInput = document.getElementById('searchInput');
+const categoryCheckboxes = document.querySelectorAll('.category-checkbox');
+const clearbtn = document.getElementById('clear-btn');
 const displayProducts = (products) => {
   productDiplay.innerHTML = ``;
   products.forEach((currentProduct) => {
