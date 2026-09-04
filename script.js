@@ -33,3 +33,12 @@ genderSelection.addEventListener('change', (e) => {
     displayProducts(products);
   }
 });
+genderRadios.forEach((radio) => {
+  radio.addEventListener('change', (e) => {
+    const selectedGender = e.target.value;
+    const filteredProducts = products.filter(
+      (p) => p.gender === selectedGender
+    );
+    displayProducts(filteredProducts);
+  });
+});
