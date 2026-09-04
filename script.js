@@ -42,3 +42,10 @@ genderRadios.forEach((radio) => {
     displayProducts(filteredProducts);
   });
 });
+
+ratingInput.addEventListener('change', (e) => {
+  const rating = Number(e.target.value);
+  ratingValue.innerText = rating;
+  const filteredProducts = products.filter((curr) => curr.rating >= rating);
+  displayProducts(filteredProducts);
+});
